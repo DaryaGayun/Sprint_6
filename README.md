@@ -4,18 +4,41 @@
 Реализован по паттерну Page Object, с параметризацией тестов и отчётом в Allure.
 
 ## Технологии
+
 - PythonS
 - Selenium
 - PyTest
 - Allure
 - Page Object Model
 
-## Установка
-```
-pip install -r requirements.txt
-```
+## Структура проекта
+
+/
+├── conftest.py # Фикстуры
+├── allure-results/ # Результаты тестов (генерируются при запуске)
+├── pages/ # Page Objects
+├── tests/ # Тесты
 
 ## Запуск тестов
+
 ```
-pytest tests/ -v
+pytest
+```
+
+## Запуск с сохранением результатов для Allure
+
+```
+pytest --alluredir=allure-results
+```
+
+## Просмотр отчёта Allure
+
+```
+allure serve allure-results
+```
+
+## Генерация статического отчета
+
+```
+allure generate allure-results -o allure-report --clean
 ```
