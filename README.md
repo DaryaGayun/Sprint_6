@@ -13,11 +13,15 @@
 
 ## Структура проекта
 
+```
 /
-├── conftest.py # Фикстуры
-├── allure-results/ # Результаты тестов (генерируются при запуске)
-├── pages/ # Page Objects
-├── tests/ # Тесты
+├─ allure-report/
+├─ allure-results/
+├─ pages/
+├─ tests/
+├─ conftest.py
+├─ ...
+```
 
 ## Запуск тестов
 
